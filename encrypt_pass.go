@@ -27,7 +27,7 @@ func main() {
 	}
 
 	md5str := fmt.Sprintf("%x", md5.Sum([]byte(in)))
-	fmt.Printf("MD5 sum into hex number:\n%s\n", md5str)
+	fmt.Printf("\nMD5 sum into hex number:\n%s\n", md5str)
 
 	if length != "" {
 		truncate, err := strconv.Atoi(length)
@@ -35,7 +35,7 @@ func main() {
 			fmt.Println(err.Error())
 			return
 		}
-		fmt.Printf("\nlast passpord after truncation:%s\n", md5str[:truncate])
+		fmt.Printf("\nlast passpord after truncation:\n%s\n", md5str[:truncate])
 
 		fmt.Printf("\nstrip alphabet and add prefix & postfix left:\n")
 		count := 0
