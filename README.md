@@ -19,3 +19,17 @@
 for help:
 `encrypt_pass -h`
 > usage: encrypt_pass [mypassword] [length], eg: encrypt_pass abc123456 8
+
+### eg:
+```shell
+s@m encrypt_pass % ./encrypt_pass_darwin aa123456 12
+input parameters: input password is aa123456, lenth is 12
+MD5 sum into hex number:
+8a6f2805b4515ac12058e79e66539be9
+
+last passpord after truncation:8a6f2805b451
+
+strip alphabet and add prefix & postfix left:
+Aa862805451.
+```
+
